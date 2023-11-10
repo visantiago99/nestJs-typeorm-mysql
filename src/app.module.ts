@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './typeorm/entities/User';
 import { UsersModule } from './users/users.module';
 import { Profile } from './typeorm/entities/Profile';
+import { Post } from './typeorm/entities/Post';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv').config();
 
@@ -17,7 +18,7 @@ require('dotenv').config();
       username: process.env.SQL_USER,
       password: process.env.SQL_PASSWORD,
       database: 'typeorm_schema_test',
-      entities: [User, Profile],
+      entities: [User, Profile, Post],
       synchronize: true,
     }),
     UsersModule,

@@ -16,3 +16,8 @@ export type CreateUserProfileParams = {
   email: string;
   dob: string;
 };
+
+export type CreateUserPostsParams = {
+  title: string;
+  content: string;
+};
