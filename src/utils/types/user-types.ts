@@ -8,3 +8,11 @@ export type UpdateUserParams = {
   password: string;
   id: number;
 };
+
+export type CreateUserProfileParams = {
+  firstName: string;
+  lastName: string;
+  age: number;
+  email: string;
+  dob: string;
+};
